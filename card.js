@@ -14,3 +14,21 @@ function toggleUser() {
     userPic.setAttribute("src", "john.png");
   }
 }
+// JSON Array
+// JSON:  Javascript Object Notation
+var users = [
+  { name: "John Doe", gender: "Male", pic: "john.png" },
+  { name: "Jane Doe", gender: "Female", pic: "jane.png" },
+  { name: "Ishan Das", gender: "Male", pic: "ishan.png" },
+  { name: "Akshaj", gender: "Male", pic: "akshaj.png" },
+  { name: "Riaan", gender: "Male", pic: "riaan.png" },
+];
+
+var currentUserIndex = 0;
+function toggleUserUsingIndex() {
+  currentUserIndex = (currentUserIndex + 1) % users.length;
+  var currentUser = users[currentUserIndex];
+  userName.textContent = currentUser.name;
+  userGender.textContent = currentUser.gender;
+  userPic.setAttribute("src", currentUser.pic);
+}
