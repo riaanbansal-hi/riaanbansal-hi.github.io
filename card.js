@@ -33,7 +33,7 @@ function toggleUserUsingIndex() {
   userPic.setAttribute("src", currentUser.pic);
 }
 
-function getRandomUser() {
+function randomUser() {
   fetch('https://randomuser.me/api')
   .then(function(response){
     return response.json();
