@@ -1,35 +1,27 @@
 body {
 background: linear-gradient(135deg, #064e64, #0d9488, #065f46);
-font-family: Arial;
 color: white;
 text-align: center;
+font-family: Arial;
 }
 
 .card {
-width: 300px;
-margin: auto;
-padding: 15px;
-background: linear-gradient(135deg, #0891b2, #047857);
 border: 2px solid white;
+width: 30%;
+margin: auto;
+background: #087f8c;
 border-radius: 15px;
-box-shadow: 0 0 15px white;
+padding: 10px;
 }
 
 .pic {
-border: 2px solid white;
-border-radius: 50%;
+width: 100%;
 }
 
 button {
 background: #14b8a6;
 color: white;
 border: 2px solid white;
-border-radius: 10px;
+border-radius: 8px;
 padding: 8px;
-cursor: pointer;
-}
-
-button {
-background: white;
-color: #047857;
 }
